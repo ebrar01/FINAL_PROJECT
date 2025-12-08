@@ -1,4 +1,4 @@
-// Color Variables
+@import "../node_modules/bootstrap/scss/bootstrap";
 $blue-primary: #A6D6E6;
 $orange-primary: #F05816;
 $cream: #FFFAE6;
@@ -6,7 +6,6 @@ $orange-secondary: #FBB094;
 $blue-secondary: #5067B3;
 $dark-navy: #333F49;
 
-// You can also set up a color map for easier access
 $colors: (
   "blue-primary": $blue-primary,
   "orange-primary": $orange-primary,
@@ -16,17 +15,12 @@ $colors: (
   "dark-navy": $dark-navy
 );
 
-// Import Bootstrap after defining variables
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// Reset body margin and padding
 body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans', sans-serif;
 }
 
-// Navbar styles
 .navbar {
   background-color: $blue-primary !important;
   font-family: 'Balsamiq Sans', sans-serif;
@@ -62,7 +56,6 @@ body {
   }
 }
 
-// Hero section
 .hero {
   background-color: $cream;
   padding: 1rem 2rem 4rem 2rem;
@@ -91,7 +84,6 @@ body {
   }
 }
 
-// About section
 .about-section {
   padding: 4rem 0;
   text-align: center;
@@ -113,7 +105,6 @@ body {
   }
 }
 
-// Packages section
 .packages-section {
   background-color: $orange-secondary;
   
@@ -180,7 +171,6 @@ body {
   }
 }
 
-// Programs section
 .programs-section {
   .section-title {
     font-family: 'Balsamiq Sans', sans-serif;
@@ -215,7 +205,6 @@ body {
   }
 }
 
-// Donate section
 .donate-section {
   .section-title {
     font-family: 'Balsamiq Sans', sans-serif;
@@ -266,7 +255,7 @@ body {
   }
 }
 
-// Testimonial section
+
 .testimonial-section {
   background-color: $cream;
   
@@ -317,7 +306,6 @@ body {
   }
 }
 
-// Contact section
 .contact-section {
   background-color: #FBA585;
   
@@ -345,7 +333,6 @@ body {
   }
 }
 
-// Footer section
 .footer-section {
   background-color: $blue-primary;
   
@@ -371,7 +358,6 @@ body {
   }
 }
 
-// Services hero section
 .services-hero {
   background-image: url('../images/services-hero.png');
   background-size: cover;
@@ -389,7 +375,6 @@ body {
   }
 }
 
-// Donate hero section
 .donate-hero {
   background-image: url('../images/3 ponies and kids.webp');
   background-size: cover;
@@ -412,7 +397,6 @@ body {
   }
 }
 
-// Impact section
 .impact-section {
   background-color: $blue-primary;
   
