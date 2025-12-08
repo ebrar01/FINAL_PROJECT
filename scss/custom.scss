@@ -1,0 +1,428 @@
+// Color Variables
+$blue-primary: #A6D6E6;
+$orange-primary: #F05816;
+$cream: #FFFAE6;
+$orange-secondary: #FBB094;
+$blue-secondary: #5067B3;
+$dark-navy: #333F49;
+
+// You can also set up a color map for easier access
+$colors: (
+  "blue-primary": $blue-primary,
+  "orange-primary": $orange-primary,
+  "cream": $cream,
+  "orange-secondary": $orange-secondary,
+  "blue-secondary": $blue-secondary,
+  "dark-navy": $dark-navy
+);
+
+// Import Bootstrap after defining variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Reset body margin and padding
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+// Navbar styles
+.navbar {
+  background-color: $blue-primary !important;
+  font-family: 'Balsamiq Sans', sans-serif;
+  
+  .navbar-logo {
+    height: 50px;
+    width: auto;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+}
+
+.btn-orange {
+  background-color: $orange-primary;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  
+  &:hover {
+    background-color: $orange-secondary;
+    color: white;
+  }
+}
+
+// Hero section
+.hero {
+  background-color: $cream;
+  padding: 1rem 2rem 4rem 2rem;
+  font-family: 'Balsamiq Sans', sans-serif;
+  
+  h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: $dark-navy;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: $dark-navy;
+  }
+  
+  .hero-subtitle {
+    color: #7C91A3;
+  }
+  
+  img {
+    max-width: 140%;
+    height: auto;
+  }
+}
+
+// About section
+.about-section {
+  padding: 4rem 0;
+  text-align: center;
+  
+  h2 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: $orange-primary;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: $dark-navy;
+  }
+}
+
+// Packages section
+.packages-section {
+  background-color: $orange-secondary;
+  
+  h2 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
+    color: $cream;
+  }
+  
+  h5 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 600;
+  }
+  
+  .package-card {
+    background-color: $cream;
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    p {
+      color: #A1AEB7;
+      flex-grow: 1;
+      text-align: center;
+    }
+    
+    .btn-blue {
+      margin-top: auto;
+    }
+  }
+  
+  img.img-fluid {
+    max-width: 160%;
+    height: auto;
+  }
+  
+  .btn-orange {
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: $cream;
+  }
+}
+
+.btn-blue {
+  background-color: $blue-primary;
+  color: $dark-navy;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-family: 'Balsamiq Sans', sans-serif;
+  
+  &:hover {
+    background-color: $blue-secondary;
+    color: white;
+  }
+}
+
+// Programs section
+.programs-section {
+  .section-title {
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: $orange-primary;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .program-card {
+    background-color: $blue-primary;
+    border-radius: 1rem;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    h3 {
+      font-family: 'Balsamiq Sans', sans-serif;
+      font-weight: 600;
+      color: $dark-navy;
+    }
+    
+    p {
+      color: $dark-navy;
+      flex-grow: 1;
+    }
+    
+    .btn-dark-teal {
+      margin-top: auto;
+    }
+  }
+}
+
+// Donate section
+.donate-section {
+  .section-title {
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: $orange-primary;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .program-card {
+    background-color: $blue-primary;
+    border-radius: 1rem;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    h3 {
+      font-family: 'Balsamiq Sans', sans-serif;
+      font-weight: 600;
+      color: $dark-navy;
+    }
+    
+    p {
+      color: $dark-navy;
+      flex-grow: 1;
+    }
+    
+    .btn-dark-teal {
+      margin-top: auto;
+    }
+  }
+}
+
+.btn-dark-teal {
+  background-color: #10454F;
+  color: $cream !important;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-weight: 600;
+  
+  &:hover {
+    background-color: darken(#10454F, 10%);
+    color: $cream !important;
+  }
+}
+
+// Testimonial section
+.testimonial-section {
+  background-color: $cream;
+  
+  .testimonial-box {
+    background-color: #FBB094;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-text {
+    font-style: normal;
+    color: $cream;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .testimonial-user {
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    h4 {
+      color: $dark-navy;
+      margin-top: 15px;
+    }
+  }
+  
+  .testimonial-dots {
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: $blue-primary;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+      &.active,
+      &:hover {
+        background-color: $blue-secondary;
+      }
+    }
+  }
+}
+
+// Contact section
+.contact-section {
+  background-color: #FBA585;
+  
+  .contact-box {
+    background-color: $cream;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1, h2 {
+      font-family: 'Balsamiq Sans', sans-serif;
+      color: $orange-primary;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    p {
+      color: $dark-navy;
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Footer section
+.footer-section {
+  background-color: $blue-primary;
+  
+  img {
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  h5 {
+    color: $dark-navy;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  p, a {
+    color: $dark-navy;
+    font-weight: 600;
+  }
+  
+  a:hover {
+    color: $orange-primary;
+  }
+}
+
+// Services hero section
+.services-hero {
+  background-image: url('../images/services-hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  
+  h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
+  }
+}
+
+// Donate hero section
+.donate-hero {
+  background-image: url('../images/3 ponies and kids.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  
+  h1 {
+    color: white;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .lead {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+}
+
+// Impact section
+.impact-section {
+  background-color: $blue-primary;
+  
+  h2 {
+    font-family: 'Balsamiq Sans', sans-serif;
+    color: $orange-primary;
+    font-weight: 700;
+  }
+  
+  p {
+    color: $dark-navy;
+  }
+}
